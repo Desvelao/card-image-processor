@@ -1,0 +1,9 @@
+id;image;name;type;rarity;weight;cost;damage;description
+dagger_common;dagger.png;Dagger;Weapon;common;1;2;1d4;20/60 range.
+dagger_uncommon;dagger.png;Dagger;Weapon;uncommon;1;8;1d4;20/60 range.
+dagger_rare;dagger.png;Dagger;Weapon;rare;1;15;1d4;20/60 range.
+dagger_epic;dagger.png;Dagger;Weapon;epic;1;30;1d4;20/60 range.
+dagger_legendary;dagger.png;Dagger;Weapon;legendary;1;60;1d4;20/60 range.
+dagger_common_no_weight;dagger.png;Dagger;Weapon;common;0;2;1d4;20/60 range.
+dagger_common_no_weight_no_cost;dagger.png;Dagger;Weapon;common;0;0;1d4;20/60 range.
+dagger_common_no_weight_no_cost_no_damage;dagger.png;Dagger;Weapon;common;0;0;;20/60 range.\n \nDamage: 1d4

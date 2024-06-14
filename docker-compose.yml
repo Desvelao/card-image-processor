@@ -1,0 +1,10 @@
+services:
+  image-builder:
+    image: node:12.22.0-stretch-slim
+    container_name: image-builder
+    user: node
+    stdin_open: true
+    tty: true
+    volumes:
+      - './:/home/node/app'
+    working_dir: /home/node/app

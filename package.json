@@ -1,0 +1,40 @@
+{
+  "name": "card-image-processor",
+  "version": "0.0.1",
+  "description": "Batch card image processor",
+  "main": "src/index.js",
+  "author": "Antonio Gutiérrez",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "image-builder": "./bin/image_builder.js",
+    "image-builder-compose-pdf": "./bin/compose_pdf.js"
+  },
+  "dependencies": {
+    "changedpi": "^1.0.4",
+    "commander": "8.3.0",
+    "csv": "^6.3.8",
+    "glob": "^8.1.0",
+    "jest": "27.5.1",
+    "jimp": "^0.22.12",
+    "pdfkit": "^0.13.0"
+  },
+  "scripts": {
+    "build": "yarn build:images && yarn build:pdf",
+    "build:images": "node bin/image_builder.js -c 'cards/sets/*/build.js'",
+    "build:pdf": "node bin/compose_pdf.js -c 'cards/sets/*/build.js'",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prettier": "prettier src bin --check",
+    "prettier:fix": "prettier src bin --write",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "26.9.0",
+    "prettier": "2.3.0"
+  }
+}

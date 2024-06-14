@@ -1,0 +1,7 @@
+node_modules
+cards/base
+cards/props
+cards/sets/*
+!cards/sets/example
+# !cards/sets/example/output/*
+# !cards/sets/example/output.pdf
